@@ -13,14 +13,16 @@ function App() {
   return (
     <>
       <Router>
-        <Route exact path="/" element={<Login />}>
-          <Route exact path="/addperson" element={<AddPerson />} />
-          <Route exact path="/editperson" element={<EditPerson />} />
-          <Route exact path="/person" element={<Person />} />
-          <Route exact path="/gift" element={<GiftView />} />
-          <Route exact path="/addgift" element={<Gift />} />
-          <Route exact path="/editgift" element={<EditGift />} />
-        </Route>
+        <Routes>
+          <Route exact path="/" element={<Login />}>
+            <Route exact path="/addperson" element={<AddPerson />} />
+            <Route exact path="/editperson" element={<EditPerson />} />
+            <Route exact path="/person" element={<Person />} />
+            <Route exact path="/gift" element={<GiftView />} />
+            <Route exact path="/addgift" element={<Gift />} />
+            <Route exact path="/editgift" element={<EditGift />} />
+          </Route>
+        </Routes>
       </Router>
     </>
   );
