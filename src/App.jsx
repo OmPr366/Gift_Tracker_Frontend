@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Route, Routes  } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./Components/Login";
 import AddPerson from "./Components/gift/AddPerson";
 import Person from "./Components/gift/Person";
@@ -12,18 +12,16 @@ import EditGift from "./Components/gift/EditGift";
 function App() {
   return (
     <>
-      <BrowserRouter>
-      
-        <Routes>
-          <Route exact path="/" element={<Login />} >
+      <Router>
+        <Route exact path="/" element={<Login />}>
           <Route exact path="/addperson" element={<AddPerson />} />
           <Route exact path="/editperson" element={<EditPerson />} />
           <Route exact path="/person" element={<Person />} />
           <Route exact path="/gift" element={<GiftView />} />
           <Route exact path="/addgift" element={<Gift />} />
-          <Route exact path="/editgift" element={<EditGift />} /></Route></Routes>
-       
-      </BrowserRouter>
+          <Route exact path="/editgift" element={<EditGift />} />
+        </Route>
+      </Router>
     </>
   );
 }
