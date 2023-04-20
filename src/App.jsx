@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes  } from "react-router-dom";
 import Login from "./Components/Login";
 import AddPerson from "./Components/gift/AddPerson";
 import Person from "./Components/gift/Person";
@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      
         <Routes>
           <Route exact path="/" element={<Login />} >
           <Route exact path="/addperson" element={<AddPerson />} />
@@ -20,8 +21,8 @@ function App() {
           <Route exact path="/person" element={<Person />} />
           <Route exact path="/gift" element={<GiftView />} />
           <Route exact path="/addgift" element={<Gift />} />
-          <Route exact path="/editgift" element={<EditGift />} /></Route>
-        </Routes>
+          <Route exact path="/editgift" element={<EditGift />} /></Route></Routes>
+       
       </BrowserRouter>
     </>
   );
