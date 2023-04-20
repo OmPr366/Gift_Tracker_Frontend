@@ -9,7 +9,7 @@ export default function Gift() {
   const navigate = useNavigate();
 
   async function handleAddGift(){
-    const response = await fetch('/api/gifts',{
+    const response = await fetch('https://gift-tacker-api.onrender.com/api/gifts',{
       method: 'POST',
       headers:{
         "Content-Type": "application/json",

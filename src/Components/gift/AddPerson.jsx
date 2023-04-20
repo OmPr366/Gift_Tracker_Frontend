@@ -9,7 +9,7 @@ export default function AddPerson() {
 
   async function handleAddPerson() {
     const uid = localStorage.getItem("currentUid");
-    const response = await fetch("/api/people", {
+    const response = await fetch("https://gift-tacker-api.onrender.com/api/people", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

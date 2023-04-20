@@ -6,7 +6,7 @@ export default function GiftView() {
   const navigate = useNavigate();
   useEffect(() => {
     async function getGifts() {
-      const response = await fetch("/api/gifts");
+      const response = await fetch("https://gift-tacker-api.onrender.com/api/gifts");
       setGifts(await response.json());
     }
     getGifts();

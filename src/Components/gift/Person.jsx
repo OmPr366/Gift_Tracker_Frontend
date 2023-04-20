@@ -14,7 +14,7 @@ export default function Person() {
 
   useEffect(() => {
     async function getUser() {
-      const user = await fetch("/api/people");
+      const user = await fetch("https://gift-tacker-api.onrender.com/api/people");
       const response = await user.json();
       setPeople(response);
     }

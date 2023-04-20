@@ -11,7 +11,7 @@ export default function EditGift() {
   const navigate = useNavigate();
 
   async function handleGiftUpdate(){
-    const response = await fetch(`/api/gifts/${giftId}`,{
+    const response = await fetch(`https://gift-tacker-api.onrender.com/api/gifts/${giftId}`,{
       method: 'PUT',
       headers:{
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ export default function EditGift() {
   }
 
   async function handleGiftDelete(){
-    const response = await fetch(`/api/gifts/${giftId}`,{
+    const response = await fetch(`https://gift-tacker-api.onrender.com/api/gifts/${giftId}`,{
       method: 'DELETE',
       headers:{
         "Content-Type": "application/json",
