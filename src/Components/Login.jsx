@@ -8,12 +8,15 @@ export default function Login() {
 
   useEffect(() => {
     // handleUrl();
-    
   }, []);
   const handleUrl = async () => {
-    const res = await  axios.get("http://localhost:3000/auth/test");
+    const res = await axios.get(
+      "https://gift-tacker-api.onrender.com/auth/test"
+    );
     // console.log(res," Axios Get Response");
-    const response = await axios.get("http://localhost:3000/auth/google");
+    const response = await axios.get(
+      "https://gift-tacker-api.onrender.com/auth/google"
+    );
     console.log(response, " Axios Get Response22");
     const link = await response.url;
     setUrl(link);
@@ -27,7 +30,7 @@ export default function Login() {
       </div>
       <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center">
         <a
-          href={'http://localhost:3000/auth/google'}
+          href={"https://gift-tacker-api.onrender.com/auth/google"}
           target="_self"
           className="relative rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
           onClick={handleLoginClick}

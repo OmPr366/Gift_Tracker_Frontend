@@ -7,19 +7,19 @@ export default defineConfig({
   server: {
     proxy: {
       "/auth/google": {
-        target: "http://localhost:3000",
+        target: "https://gift-tacker-api.onrender.com",
         changeOrigin: true,
       },
       "/api/users": {
-        target: "http://localhost:3000",
+        target: "https://gift-tacker-api.onrender.com",
         changeOrigin: true,
       },
       "/api/people": {
-        target: "http://localhost:3000",
+        target: "https://gift-tacker-api.onrender.com",
         changeOrigin: true,
       },
       "/api/gifts": {
-        target: "http://localhost:3000",
+        target: "https://gift-tacker-api.onrender.com",
         changeOrigin: true,
       },
     },
