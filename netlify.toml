@@ -1,9 +1,7 @@
 [[redirects]]
-  from = "/auth/google"
-  to = "https://xs-xegm.onrender.com/auth/google"
+  from = "/*"
+  to = "/index.html"
   status = 200
-  force = true
-  headers = {X-From = "Netlify"}
 [[headers]]
   for = "/*"
   [headers.values]
