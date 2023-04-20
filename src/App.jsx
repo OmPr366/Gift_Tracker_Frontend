@@ -14,13 +14,13 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route  path="/" element={<Login />} />
-          <Route  path="/addperson" element={<AddPerson />} />
-          <Route  path="/editperson" element={<EditPerson />} />
-          <Route  path="/person" element={<Person />} />
-          <Route  path="/gift" element={<GiftView />} />
-          <Route  path="/addgift" element={<Gift />} />
-          <Route  path="/editgift" element={<EditGift />} />
+          <Route exact path="/" element={<Login />} >
+          <Route exact path="/addperson" element={<AddPerson />} />
+          <Route exact path="/editperson" element={<EditPerson />} />
+          <Route exact path="/person" element={<Person />} />
+          <Route exact path="/gift" element={<GiftView />} />
+          <Route exact path="/addgift" element={<Gift />} />
+          <Route exact path="/editgift" element={<EditGift />} /></Route>
         </Routes>
       </BrowserRouter>
     </>
