@@ -1,8 +1,9 @@
 {
     "rewrites":  [
-      {"source": "/(.*)", "destination": "/"},
       {"source": "/addperson", "destination": "/addperson"},
-      {"source": "/person", "destination": "/person"}
+      {"source": "/person", "destination": "/person"},
+      {"source": "/(.*)", "destination": "/"}
+
     ]
 }
 
