@@ -1,7 +1,9 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/" },
-      { "src": "/addperson", "dest": "/addperson" },
-      { "src": "/person", "dest": "/person" }
+    "rewrites":  [
+      {"source": "/(.*)", "destination": "/"},
+      {"source": "/addperson", "destination": "/addperson"},
+      {"source": "/person", "destination": "/person"}
     ]
-  }
+}
+
+  
